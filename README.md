@@ -9,7 +9,7 @@ Our project aims to benefit from the Machine Learning field in order to implemen
 The outcomes will be useful for the both food and pharma industries.
 
 ## Project members ##
-Laith Abu-Omar            laith.abuomar@mail.huji.ac.il
+Laith Abu-Omar            laith.abuomar@mail.huji.ac.il  
 Abdelmoute Ewiwi      abdelmoute.ewiwi@mail.huji.ac.il
 
 # Contact #
