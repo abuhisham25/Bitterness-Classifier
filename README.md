@@ -1,5 +1,6 @@
 # Bitterness-Classifier #
 Bitterness Classifier – Predicting Taste from Chemical Structure
+![BC_Logo](https://github.com/abuhisham25/Bitterness-Classifier/blob/master/BC_Pictures%20And%20Diagrams/BC_Full_Logo.png)
 
 ## Abstract ##
 The sense of taste (also known as gustation) is among the five traditionally recognized senses. This crucial chemical sense mediates between the external chemical and internal biochemical environments. Its prominent role comes in determining whether to accept incoming food to be swallowed or to reject it. Particularly, the bitter taste is believed to be a sign of the presence of poisonous compounds.
