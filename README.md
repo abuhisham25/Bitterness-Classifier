@@ -17,6 +17,6 @@ Laith Abu-Omar            laith.abuomar@mail.huji.ac.il
 Abdelmoute Ewiwi      abdelmoute.ewiwi@mail.huji.ac.il
 
 # Contact #
-For more details about me, please see [my Linkedin page](https://www.linkedin.com/in/abuhisham/)
+For more details about me, please see [my Linkedin page](https://www.linkedin.com/in/abuhisham/){:target="_blank"}
 
 ![BC_Logo](https://github.com/abuhisham25/Bitterness-Classifier/blob/master/BC_Pictures%20And%20Diagrams/BC_Logo.png)
