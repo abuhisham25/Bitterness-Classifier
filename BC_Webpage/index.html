@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="Bitterness Classifier is a Machine Learning Based Algorithm for determining the bitter taste of chemical molecules according to their chemical descriptors" />
+	<meta name="author" content="Abu Hisham" />
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<![endif]-->
+	<title>Bitterness Classifier - HUJI</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+	<!-- BOOTSTRAP CORE STYLE CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<!-- FONT AWESOME STYLE CSS -->
+	<link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+	<!-- CUSTOM STYLE CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" />    
+	<!-- GOOGLE FONT -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+	 <!--NAVBAR SECTION-->
+	<div class="navbar navbar-inverse navbar-fixed-top scrollclass" >
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<img src="assets/img/HUJI_LogoHeb.png" id="hujiLogo"></img>
+				<img src="assets/img/logo.png" id="bcLogo"></img>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a id="homeA" href="#home">HOME</a></li>
+					<li><a id="whatA" href="#whatIsBC">What is BC</a></li>
+					 <li><a id="aboutA" href="#about">ABOUT</a></li>
+					 <li><a id="contactA" href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+		   
+		</div>
+	</div>
+   <!--END NAVBAR SECTION-->
+		<!--HOME SECTION-->
+	   <section id="home" class="text-center">
+			<div class="container">
+		   <div class="row text-center pad-top" >
+			<div class="col-md-12 pad-top-more">
+				<h1>Ready for Prediction  </h1>
+				<a href="#" class="btn btn-lg pad-top">
+					</a>
+				<h3>Let Bitterness Classifier determine whether it is Bitter or not </h3>
+				<p class="col-md-8 col-md-offset-2">
+					Upload your .xls or .xlsx file containing the 60 descriptors of one or more chemical molecules. Do this by clicking on the blue button below.
+				</p>
+				<p class="col-md-8 col-md-offset-2">
+					Then click on the red button to get the prediction of the taste 
+				</p>
+				
+			</div>
+
+			<div>
+<!-- 				<form id="bcForm" action="http://localhost:1234/" enctype="multipart/form-data" method="POST">
+					<div class="fileUpload btn btn-primary">
+						<span><b>Upload</b></span>
+						<input type="file" name="targetFile" class="upload" accept=".xls,.xlsx" />
+					</div>
+					<input type="submit" class="predictionButton" value="Predict Taste " style="vertical-align:middle" />
+				</form>
+ -->			
+ 				<!-- <textarea name="uploadT" form="bcForm" cols="50">Paste data here...</textarea> -->
+ 				<form id="bcForm" method='POST' enctype='multipart/form-data' action='http://localhost:80/'>
+ 					<div class="fileUpload btn btn-primary">
+						<span><b>Upload</b></span>
+						<input type=file name=upfile class="upload" accept=".xls,.xlsx" />
+					</div>
+					<input type=submit class="predictionButton" value="Predict Taste " name="bcPredButton" style="vertical-align:middle" />
+					<div id="recaptchaDiv">
+					<div class="g-recaptcha" data-sitekey="6Lf4hCYUAAAAAHaajrzOm-fS2FaquCLt9xAh6TQV"></div>
+					</div>
+				</form>
+			</div>
+			   
+			</div>
+		</div>
+	   </section>
+	<!--END SECTION-->
+
+	<!--WhatIsBC SECTION-->
+	<section id="whatIsBC"  >
+			<div class="container">
+					<div class="row text-center" >
+						<div class="col-md-12">
+							<h1>What is Bitterness Classifier </h1>
+						</div>
+					 </div>
+					<div id="bcPoster">
+					<img src="assets/img/backgroundWeb.png" id="bcBkLogo" alt=""></img>
+					<p class="bcText">
+						Determining the presence of a bitter taste is important for many reasons. From pharmaceutical  industries, to Food industries, as well as having therapeutic potential too. However, bitter taste is complex: the estimations are that there are thousands or more of bitter compounds, and it is known that bitter compounds are very diverse in terms of their chemical structure. To date, there are not many CS-based solutions for predicting bitterness.
+						Bitterness Classifier aims to benefit from the Machine Learning field in order to implement a classifier that is able to predict the bitter/non-bitter taste of chemical molecules. To this end we used different learning algorithms, such as Random Forests, and Neural Networks, using ML libraries (such as Scikit-learn) and data from Prof Niv lab: BitterDB, a large public repository of bitter compounds as positive set, and in house non-bitter  set as negative set.
+					</p>
+					<p class="bcText">
+						BC is a tool capable of determining the presence of bitter taste in chemical molecule based on the chemical descriptors of it. BC uses the learning algorithms which are designed to work with the input descriptors in order to predict whether the input molecule(s) is bitter or not.
+					</p>
+					<p class="bcText">
+						The input required by BC is an Excel file (.xls, or .xlsx) containing the SMILES alongside the 60 descriptors agreed upon of the molecules. Upon completed prediction, BC engine will return an Excel file for download containing the Index of each molecule alongside its prediction of taste (bitter, or non-bitter).
+					</p>
+					<p class="bcText">
+						To predict taste using BC, use the Home section above.
+					</p>
+					<p class="bcText">
+						For any queries or information, please refer to the "Contact Us" section below.
+					</p>
+					</div>
+			</div>
+	</section>
+	<!--END WhatIsBC SECTION-->
+
+	<!--ABOUT SECTION-->
+		<section id="about"  >
+			<div class="container">
+				 <div class="row text-center" >
+			   <div class="col-md-12">
+					<h1>ABOUT  US</h1>
+			   </div>
+					 </div>
+			<div class="row  pad-top" id="aboutUsDiv">
+				<p>
+				The Bitterness Classifier project was made as part of the Niv Lab research group lead by Professor Masha Niv at The Robert H. Smith Faculty of Agriculture, Food and Environment, at The Hebrew University of Jerusalem.
+				</p>
+				<p>
+				For more information please refer to the <a id="aboutRef" href="http://departments.agri.huji.ac.il/biochemfoodsci722/teachers/niv_masha/lab/" target="_blank">Niv Lab</a>
+				</p>
+				<p>
+				The BC website and engine was done by two undergraduate students, <b>Laith Abu-Omar</b> and <b>Abdelmoute Ewiwi</b>, at the Hebrew University of Jerusalem as part of the final graduation project at the Electrical and Computer Engineering BSc program.
+				</p>
+			</div>
+		</div>
+		</section>
+	<!--END ABOUT SECTION-->
+
+	<!--CONTACT SECTION-->
+		<section id="contact">
+			<div class="container">
+				<div class="row text-center" >
+					<div class="col-md-12">
+						<h1>CONTACT US</h1>
+					</div>
+				</div>
+				<div class="row text-center pad-top" id="contactUsDiv">
+					<p id="nivLabAbout"> 
+					The Niv Lab lead by Prof. Masha Niv at the Hebrew University of Jerusalem
+					</p>
+					<p id="nivLabTel"><b>Tel:</b> +972–08–9489664</p>
+					<p id="nivLabMail"><b>Email Address:</b> masha.niv@mail.huji.ac.il </p>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="add">
+				<b>Address: </b> The Institute of Biochemistry, Food and Nutrition, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, P.O.Box 12, Rehovot 76100, Israel
+			</div>
+			<iframe class="cnt" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBnDvzfLspu0IO6LXpLV0mu0JIzId8AUrs&q=Faculty+of+Agriculture,+Food+and+Environment+Robert+H..+Smith" allowfullscreen>
+			</iframe>
+	   
+		</section>
+		<!--END CONTACT SECTION-->
+
+		<!--FOOTER SECTION-->
+	<div id="footer">
+		©2017 The Hebrew University of Jerusalem | All Rights Reserved  | Design by Abu Hisham
+	</div>
+	 <!--FOOTER SECTION-->
+	<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+	<!-- CORE JQUERY  -->
+	<script src="assets/plugins/jquery-1.10.2.js"></script>
+	<!-- BOOTSTRAP SCRIPTS  -->
+	<script src="assets/plugins/bootstrap.js"></script>
+	 <!-- EASING SCROLL SCRIPTS PLUGIN  -->
+	<script src="assets/plugins/jquery.easing.min.js"></script>
+	 <!-- CUSTOM SCRIPTS   -->
+	<script src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+	<script src="http://malsup.github.com/jquery.form.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script> 
+</body>
+</html>
