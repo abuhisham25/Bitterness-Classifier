@@ -9,9 +9,14 @@ Bitter taste is complex: the estimations are that there are thousands or more of
 Our project aims to benefit from the Machine Learning field in order to implement a classifier that is able to predict the bitter/non-bitter taste of chemical molecules. To this end we used different learning algorithms, such as Random Forests, and Neural Networks, using ML libraries (such as Scikit-learn) and data from Prof Niv lab: BitterDB, a large public repository of bitter compounds as positive set, and in house non-bitter  set as negative set. We also developed a public site, which uses our model and predicts whether a given compound (represented by a set of descriptors) is bitter or not.  
 The outcomes will be useful for the both food and pharma industries.
 
+## Bitterness Classifier - Bird's Eye View ##
+![BC_BirdsEyeView](https://github.com/abuhisham25/Bitterness-Classifier/blob/master/BC_Pictures%20And%20Diagrams/BC_BirdsEyeView.png)
+
 ## Project members ##
 Laith Abu-Omar            laith.abuomar@mail.huji.ac.il  
 Abdelmoute Ewiwi      abdelmoute.ewiwi@mail.huji.ac.il
 
 # Contact #
 For more details about me, please see [my Linkedin page](https://www.linkedin.com/in/abuhisham/)
+
+![BC_Logo](https://github.com/abuhisham25/Bitterness-Classifier/blob/master/BC_Pictures%20And%20Diagrams/BC_Logo.png)
